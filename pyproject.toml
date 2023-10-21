@@ -1,0 +1,21 @@
+[tool.poetry]
+name ="Base template for telegram bot (AIOGram + FastAPI + Redis)"
+version = "0.1.0"
+description = "aiogram + fastapi + redis"
+authors = ["Nikolay Mamashin <mamashin@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.103.1"
+uvicorn = "^0.23.2"
+httpx = "^0.25.0"
+aiogram = "^3.1.1"
+redis = "^5.0.0"
+loguru = "^0.7.2"
+pydantic-settings = "^2.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
