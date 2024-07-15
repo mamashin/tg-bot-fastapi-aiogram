@@ -34,7 +34,7 @@ async def set_webhook(my_bot: Bot) -> None:
     if cfg.debug:
         logger.debug(f"Current bot info: {current_webhook_info}")
     try:
-        await bot.set_webhook(
+        await my_bot.set_webhook(
             f"{cfg.base_webhook_url}{cfg.webhook_path}",
             secret_token=cfg.telegram_my_token,
             drop_pending_updates=current_webhook_info.pending_update_count > 0,
